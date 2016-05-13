@@ -1,0 +1,23 @@
+		
+   		
+<div ng-controller="yearlyctrl">
+<div class="col-md-12 ser-grid">
+    <h4>Select the University to view ROI year wise</h4>
+	    <div>
+		   <select ng-model="selected" ng-change="selectedItemChanged(selected)" ng-init="selected='0'">
+		       <option 
+		           ng-selected="{{college.id == selected}}"
+		           ng-repeat="college in collegeNames"
+		           value="{{college.id}}">
+		           {{college.name}}
+		       </option>
+	      </select>
+	    </div>
+	    
+	    <div>
+	       <highchart id="chart1" config="highchartsNG"></highchart>
+	    </div>
+</div>
+</div>
+
+    

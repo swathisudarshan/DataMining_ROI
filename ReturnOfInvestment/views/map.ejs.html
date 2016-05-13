@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Leaflet Cluster Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    	<link rel='stylesheet' href='/stylesheets/style.css' />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   		<script src="http://code.highcharts.com/highcharts.src.js"></script>
+   		    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+    <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js?2'></script>
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js?2'></script>
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
+    	<script src= "/js/home.js"></script>
+    	  <script src="https://rawgithub.com/pablojim/highcharts-ng/master/src/highcharts-ng.js"></script>
+  </head>
+
+  <body ng-controller="ctrl1">
+	    <div>
+	     <div class="col-md-3 ser-grid">
+			<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+				  <a href="home" class="hi-icon glyphicon glyphicon-stats"><h4>YEARLY ANALYSIS</h4></a>
+				<p>Visualize the statistics of different colleges </p>
+			</div>
+		</div>
+	    <div class="col-md-3 ser-grid">
+			<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+				  <a href="home" class="hi-icon glyphicon glyphicon-stats"><h4>STATISTICAL ANALYSIS</h4></a>
+				<p>Visualize the statistics of different colleges </p>
+			</div>
+		</div>
+		<div class="col-md-3 ser-grid">
+			<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+				<a href="home" class="hi-icon glyphicon glyphicon-star">
+				<h4>PREDICTION</h4></a>
+				<p>Know the probability with which you can repay your debt based on particular factors.</p>
+			</div>
+		</div>
+		<div class="col-md-3 ser-grid">
+			<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+				<a href="/maps" class="hi-icon glyphicon glyphicon-map-marker">
+				<h4>LOCATE THE COLLEGES</h4></a>
+				<p>Locate the colleges on maps and know their details</p>
+			</div>
+		</div>
+		
+	<div class="col-md-12 ser-grid">
+    <h4>Spatial Analysis</h4>
+
+    <div id="map" style="width: 800px; height: 500px; border: 1px solid #AAA;"></div>
+
+    <!-- <script type='text/javascript' src='/js/markers.js'></script> -->
+    <script type='text/javascript' src='/js/scorecard.js'></script>
+    <script type='text/javascript' src='/js/leaf-demo.js'></script>
+  </div>
+  
+</html>

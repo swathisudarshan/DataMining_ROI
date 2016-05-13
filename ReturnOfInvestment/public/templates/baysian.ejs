@@ -1,0 +1,67 @@
+<div ng-controller="baysianCtrl">
+<div class="col-md-12 ser-grid">
+<h4>Return of Investment of the Educational Institutions</h4></br>
+
+<div>
+    <div class="row">
+    
+    <div class="col-md-4">   
+        Tuition Fees: <select name="singleSelect" id="singleSelect" ng-model="tuition">
+          <option value="" disabled selected style="display: none;">Please select Tuition fees</option>
+	      <option  selected="selected">Average</option>
+	      <option>Low</option>
+	      <option>High</option>
+	    </select><br><br>
+	 </div>
+	 <div class="col-md-4">
+	     Earnings: <select name="singleSelect" id="singleSelect" ng-model="earning">
+	      <option value="" disabled selected style="display: none;">Please select Earning</option>
+	      <option  selected="selected">Low</option>
+	      <option>High</option>
+	    </select><br> </br>
+	 </div>
+	 <div class="col-md-4">
+	     Completion Rate: <select name="singleSelect" id="singleSelect" ng-model="completion">
+	     <option value="" disabled selected style="display: none;">Please select Completion Rate</option>
+	      <option  selected="selected">Low</option>
+	      <option>High</option>
+	    </select><br> </br>
+	 </div>
+	 
+	 </div>
+	 
+	 <div class="row">
+	 <div class="col-md-3">
+	    <button type="button" ng-click="calculate(tuition,earning,completion)" class="btn btn-primary">Calculate</button>
+	 </div> 
+	 </div>
+	    </br></br>
+
+	<table class="table">
+			<tr>
+				<th>Tuition Fees
+				</th>
+				<th>Earnings
+				</th>
+				<th>Completion Rate
+				</th>
+				<th>Probability
+				</th>
+			</tr>
+			<tr ng-repeat="data in baysiandata">
+				<td>{{data.fees}}
+				</td>
+				<td>{{data.earn}}
+				</td>
+				<td>{{data.comp}}
+				</td>
+				<td ng-mouseover="showCollegeList()"><a href data-toggle="popover" title= {{data.college}} data-content="More stuff here.." data-trigger="hover">{{data.prob}}</a>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+</div>
+
+</div>

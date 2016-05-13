@@ -1,0 +1,21 @@
+		
+   		
+<div ng-controller="ctrl1">
+<div class="col-md-12 ser-grid">
+    <h4>Select the Stats you want to view</h4>
+    <div>
+	    <select name="singleSelect" id="singleSelect" ng-model="selection" ng-init="selection='Tuition Fees'" ng-change="selectedItemChanged()">
+	      <option  selected="selected">Tuition Fees</option>
+	      <option>Earnings</option>
+	      <option>Completion Rate</option>
+	    </select><br>
+    </div>
+    <div>
+       <highchart id="chart1" config="highchartsNG"></highchart>
+    </div>
+</div>
+</div>
+
+    
+
+    
